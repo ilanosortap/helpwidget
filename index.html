@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Help</title>
+    <link rel="stylesheet" href="styles/bootstrap1.min.css" />
+<style>
+    .glyphicon{
+        font-size:80px;
+        color:dimgray;
+    }
+    h5{
+       color: dimgray;
+       font-family:Calibri;
+    }
+    
+</style>
+</head>
+<body>
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#chat").hover(function () { $(this).css("color", "darkgray"); }, function () { $(this).css("color", "dimgray"); });
+            $("#chat").click(function () { $(this).css("color", "black"); });
+            $("#email").hover(function () { $(this).css("color", "darkgray"); }, function () { $(this).css("color", "dimgray"); });
+            $("#email").click(function () { $(this).css("color", "black"); });
+            $("#search").hover(function () { $(this).css("color", "darkgray"); }, function () { $(this).css("color", "dimgray"); });
+            $("#search").click(function () { $(this).css("color", "black"); });
+        })
+    </script>
+    <div class="container-fluid" style="padding-top:100px; padding-left:20px">
+        <div class=" row ">
+            <a href="chat.html"><div class="col-md-4 glyphicon glyphicon-comment" id="chat"></div></a>
+            <a href="email.html"><div class="col-md-4 glyphicon glyphicon-envelope" id='email'></div></a>
+            <a href="search.html"><div class="col-md-4 glyphicon glyphicon-search" id='search'></div></a>
+        </div>
+        <div class="row">
+            <h5 class="col-md-4">Chat</h5>
+            <h5 class="col-md-4">Email Support</h5>
+            <h5 class=" col-md-4">Search</h5>
+        </div>
+    </div>
+   
+</body>
+</html>
